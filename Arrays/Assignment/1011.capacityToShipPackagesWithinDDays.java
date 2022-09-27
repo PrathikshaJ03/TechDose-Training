@@ -7,7 +7,7 @@ class Solution {
             }
             sum+=weights[i];
         }
-        if(days==weights.length){
+        if(days>=weights.length){
             return max;
         }
         else if(days==1){
