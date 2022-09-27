@@ -19,11 +19,11 @@ public class Main{
 	        }
 	        sum+=arr[i];
 	    }
-	    if(K==N){
-	        return sum;
+	    if(K>=N){
+	        return max;
 	    }
 	    else if(K==1){
-	        return max;
+	        return sum;
 	    }
 	    int low=max,high=sum,mid,result=0;
 	    while(low<=high){
