@@ -27,3 +27,6 @@ public class Main{
 		System.out.print(Arrays.toString(s));
 	}
 }
+
+// TC : O(2^N)
+// SC : O(N)
