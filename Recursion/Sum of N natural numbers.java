@@ -13,3 +13,6 @@ public class Main{
 		System.out.print(sumOfNaturalNos(N));
 	}
 }
+
+// TC : O(N)
+// SC : O(N)
