@@ -1,3 +1,4 @@
+// First Method (My solution)
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root==null){
@@ -25,6 +26,27 @@ class Solution {
         }
         else{
             return false;
+        }
+    }
+}
+
+// Another Method
+class Solution {
+    boolean res=false;
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        pathSum(root,targetSum);
+        return res;
+    }
+    
+    public void pathSum(TreeNode root,int target){
+        if(root!=null){
+            root.val=target-root.val;
+            if(root.left==null && root.right==null && root.val==0){
+                res=true;
+                return;
+            }
+            pathSum(root.left,root.val);
+            pathSum(root.right,root.val);
         }
     }
 }
