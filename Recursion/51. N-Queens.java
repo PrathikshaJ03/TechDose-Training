@@ -29,11 +29,13 @@ class Solution {
                 return false;
             }
         }
+        //135 degree angle
         for(int i=row-1,j=col-1;i>=0 && j>=0;i--,j--){
             if(ch[i][j]=='Q'){
                 return false;
             }
         }
+        //45 degree angle
         for(int i=row-1,j=col+1;i>=0 && j<ch.length;i--,j++){
             if(ch[i][j]=='Q'){
                 return false;
